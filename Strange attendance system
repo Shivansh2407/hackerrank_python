@@ -1,0 +1,16 @@
+n=int(input())
+for i in range (0,n):
+    m=input().split()
+    a=int(m[0])
+    b=int(m[1])
+    p=(b/a)*100
+    if(p>=75):
+        ext=0
+        print(ext)
+    elif(p==50):
+        ext=a
+        print(ext)
+    else:
+        ext=int(((((75-p))*4)/100)*a)
+        print(ext)
+        
